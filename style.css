@@ -30,7 +30,7 @@ h1 {
   width: 25px;
   height: 25px;
   border: none;
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 #board .black-space {
   background-color: #000000;
