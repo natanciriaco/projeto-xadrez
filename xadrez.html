@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="xadrez.js"></script>
+    <title>Xadrez</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: darksalmon;
+            background-image: url(back-xadrez.jpg);
+            background-repeat: no-repeat;
+            background-position: 17% 7%;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        h1{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.829);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #board{
+            margin: auto;
+            margin-top: 10px;
+            width: 200px;
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.788);
+        }
+
+        .board-space{
+            text-align: center;
+            outline: none;
+            width: 25px;
+            height: 25px;
+            border: none;
+        }
+        
+        .black-space{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .btn-resposta{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 1.7rem;
+        }
+
+        .btn-final{
+            font-size: 14px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.562);
+            background-color: rgba(4, 102, 12, 0.692);
+            color: white;
+            padding: 10px;
+        }
+
+        .btn-final:hover{
+            background-color: rgba(4, 102, 12, 0.616);;
+        }
+
+        .info{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            width: 310px;
+            margin: auto;
+        }
+
+        .legenda, .resposta{
+            width: 220px;
+            background-color: rgba(255, 255, 255, 0.616);
+        }
+
+        .legenda{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chess</h1>
+    <div id="board">
+        
+    </div>
+    <div class="btn-resposta">
+        <input id="reset" class="btn-final" type="button" value="Resetar" onclick="createBoard()">
+        <input id="calc" class="btn-final" type="button" value="Calcular" onclick="calcular()">
+    </div>
+
+    <div class="info">
+        <div class="legenda">
+            <h3>Legenda</h3>
+            <p>Peão = 1</p>
+            <p>Bispo = 2</p>
+            <p>Cavalo = 3</p>
+            <p>Torre = 4</p>
+            <p>Rainha = 5</p>
+            <p>Rei = 6</p>
+        </div>
+        <div class="resposta">
+            <h3>Contagem</h3>
+            <p>Peão: 16 peça(s)</p>
+            <p>Bispo: 4 peça(s)</p>
+            <p>Cavalo: 4 peça(s)</p>
+            <p>Torre: 4 peça(s)</p>
+            <p>Rainha: 2 peça(s)</p>
+            <p>Rei: 2 peça(s)</p>
+        </div>
+    </div>
+</body>
+</html>
