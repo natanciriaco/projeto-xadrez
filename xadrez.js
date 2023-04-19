@@ -116,14 +116,3 @@ function calcular() {
     piece[10].innerHTML = `Rainha: ${contagem.rainha} peça(s)`
     piece[11].innerHTML = `Rei: ${contagem.rei} peça(s)`
 }
-
-
-
-/* 
-(0,0)     (0,7)
-
-(7,0)     (7,7)
-
-
-
-*/

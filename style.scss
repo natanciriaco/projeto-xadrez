@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e9967a;
+    background-image: url(back-xadrez.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 17% 7%;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.829);
+    text-align: center;
+}
+
+#board{
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.788);
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+
+    .board-space{
+        text-align: center;    
+        outline: none;
+        width: 25px;
+        height: 25px;
+        border: none;
+    }
+
+    .black-space{
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+.btn-resposta{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 1.7rem;
+
+    .btn-final{
+        border: 2px solid #0000008f;
+        background-color: #04660cb0;
+        color: #ffffff;
+        font-size: 14px;
+        border-radius: 15px;
+        padding: 10px;
+
+        &:hover{
+            background-color: #04660c9d;
+        }
+    }
+}
+
+.info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    gap: 20px;
+    width: 310px;
+    
+    .legenda, .resposta{
+        width: 220px;
+        background-color: rgba(255, 255, 255, 0.616);
+    }
+
+    .legenda{
+        margin: auto;
+    }
+}
