@@ -1,1 +1,1 @@
-Este projeto fazia parte de uma task para um estágio a UNIFOR, esse desafio pedia que você montasse um jogo de xadrez sem utilizar estruturas condicionais.
+Este projeto faz parte de uma task para um estágio da UNIFOR, esse desafio consiste em demonstrar no console um jogo de xadrez sem utilizar estruturas condicionais.
